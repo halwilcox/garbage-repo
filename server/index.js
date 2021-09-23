@@ -6,7 +6,7 @@ const app = express()
 console.log(__dirname)
 
 app.get('/', (req,res) => {
-    res.sendFile(path.join(__dirname,'../index.html'))
+    res.sendFile(path.join(__dirname,'../client/index.html'))
 })
 
 const port = process.env.PORT || 4400
